@@ -1,31 +1,81 @@
 import json
 import os
+import warnings
 
 import numpy as np
 import onnxruntime as ort
 
-from models.tokenizer_qwen3 import Qwen3Tokenizer
+from models.tokenizer_qwen3 import Qwen3Tokenizer, TOKENIZER_JSON
 from config.settings import settings
 
-# Confirmed via session.get_inputs() on the 8B export: past_key_values.*.key/
-# value are tensor(float) (fp32), same as the Phi-3 export, despite
-# INT4-quantized weights. Both the 8B and 14B builds go through the same
-# onnxruntime-genai export pipeline, so this is expected to hold for the 14B
-# model too — re-confirm via session.get_inputs() during CPU validation.
+# KV-cache dtype is NOT the same across builds, so it's read from the ONNX
+# graph's own input signature at load time (see _kv_cache_dtype_from_session).
+# Confirmed 2026-09-24 by parsing both model.onnx graphs:
+#   models/qwen3_8b        (CPU build)  -> past_key_values.* tensor(float)   fp32
+#   models/qwen3_14b_cuda  (CUDA build) -> past_key_values.* tensor(float16) fp16
+#                                          (logits are fp16 too)
+# The old hardcoded fp32 constant would make the 14B build fail on its first
+# session.run() with an "Unexpected input data type" error.
+# This constant is only a fallback if the graph can't be inspected.
 KV_CACHE_DTYPE = np.float32
+
+_ORT_TYPE_TO_NUMPY = {
+    "tensor(float)": np.float32,
+    "tensor(float16)": np.float16,
+    "tensor(double)": np.float64,
+}
+
+# The name onnxruntime actually registers for the TensorRT-RTX EP. The old
+# short name "NvTensorRtRtx" isn't a registered provider name, so ORT would
+# just warn and silently run on CPU — a "GPU" run that was really CPU.
+TRT_RTX_PROVIDER = "NvTensorRTRTXExecutionProvider"
 
 # Execution provider profiles. Flipping to GPU is just switching
 # LUCY_EXECUTION_PROVIDER=gpu (or settings.MODEL_EXECUTION_PROVIDER) — no
-# code change. NvTensorRtRtx falls back to CPU if unavailable.
+# code change. Falls back to CPU (with a loud warning) if unavailable.
 PROVIDER_PROFILES = {
     "cpu": ["CPUExecutionProvider"],
-    "gpu": ["NvTensorRtRtx", "CPUExecutionProvider"],
+    "gpu": [TRT_RTX_PROVIDER, "CPUExecutionProvider"],
 }
 
 
-def resolve_providers(mode: str = None) -> list:
+def resolve_providers(mode: str = None, available: list = None) -> list:
+    """Return the provider list for `mode`, keeping only providers this
+    onnxruntime install actually has. Warns if GPU was requested but the
+    TensorRT-RTX EP isn't available (e.g. plain `onnxruntime` CPU wheel
+    installed instead of the TensorRT-RTX build)."""
     mode = (mode or settings.MODEL_EXECUTION_PROVIDER or "cpu").lower()
-    return PROVIDER_PROFILES.get(mode, PROVIDER_PROFILES["cpu"])
+    wanted = PROVIDER_PROFILES.get(mode, PROVIDER_PROFILES["cpu"])
+    if available is None:
+        available = ort.get_available_providers()
+
+    # Match case-insensitively so a differently-cased registration still hits.
+    by_lower = {p.lower(): p for p in available}
+    resolved = [by_lower[p.lower()] for p in wanted if p.lower() in by_lower]
+
+    if mode == "gpu" and TRT_RTX_PROVIDER.lower() not in by_lower:
+        warnings.warn(
+            f"GPU requested but {TRT_RTX_PROVIDER} is not available in this "
+            f"onnxruntime install (available: {available}). Running on CPU.",
+            RuntimeWarning,
+        )
+    return resolved or ["CPUExecutionProvider"]
+
+
+def _kv_cache_dtype_from_session(session, kv_in_names: list):
+    """Read the KV-cache element type from the loaded graph's inputs."""
+    types = {i.name: i.type for i in session.get_inputs()}
+    missing = [n for n in kv_in_names if n not in types]
+    if missing:
+        raise ValueError(
+            f"Model graph is missing {len(missing)} expected KV-cache inputs "
+            f"(first: {missing[0]!r}) — config layer count doesn't match the "
+            "ONNX graph."
+        )
+    ort_type = types[kv_in_names[0]] if kv_in_names else "tensor(float)"
+    if ort_type not in _ORT_TYPE_TO_NUMPY:
+        raise ValueError(f"Unsupported KV-cache dtype {ort_type!r}")
+    return _ORT_TYPE_TO_NUMPY[ort_type]
 
 
 def _load_model_architecture(model_dir: str) -> dict:
@@ -86,7 +136,11 @@ class Qwen3Engine:
     def __init__(self, model_dir: str, onnx_model_name: str, execution_provider: str = None):
         self.model_path = os.path.join(model_dir, onnx_model_name)
 
-        self.tokenizer = Qwen3Tokenizer()
+        # Use the tokenizer shipped with this model; fall back to the 8B one.
+        tokenizer_path = os.path.join(model_dir, "tokenizer.json")
+        if not os.path.exists(tokenizer_path):
+            tokenizer_path = TOKENIZER_JSON
+        self.tokenizer = Qwen3Tokenizer(tokenizer_path)
 
         arch = _load_model_architecture(model_dir)
 
@@ -98,6 +152,8 @@ class Qwen3Engine:
             self.model_path,
             providers=resolve_providers(execution_provider),
         )
+        # What ORT actually ended up using — check this, not what was asked for.
+        self.active_providers = self.session.get_providers()
 
         self.input_ids_name = "input_ids"
         self.attention_mask_name = "attention_mask"
@@ -119,12 +175,15 @@ class Qwen3Engine:
 
         self.logits_name = "logits"
 
+        # fp32 for the 8B CPU build, fp16 for the 14B CUDA build.
+        self.kv_dtype = _kv_cache_dtype_from_session(self.session, self.kv_in_names)
+
     def _init_kv_cache(self):
         cache = {}
         for name in self.kv_in_names:
             cache[name] = np.zeros(
                 (1, self.num_kv_heads, 0, self.head_dim),
-                dtype=KV_CACHE_DTYPE,
+                dtype=self.kv_dtype,
             )
         return cache
 

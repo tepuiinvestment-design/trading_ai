@@ -36,6 +36,7 @@ def main():
         execution_provider="cpu",
     )
     print(f"Loaded in {time.time() - load_start:.1f}s")
+    print(f"Active providers: {engine.active_providers}  |  KV-cache dtype: {engine.kv_dtype.__name__}")
 
     # Sanity-check the architecture actually read from this model's own
     # config, not leftover 8B constants.
@@ -50,6 +51,8 @@ def main():
     assert engine.num_layers == 40, f"expected 40 layers for 14B, got {engine.num_layers}"
     assert engine.num_attention_heads == 40, f"expected 40 attn heads for 14B, got {engine.num_attention_heads}"
     assert engine.head_dim == 128, f"expected head_dim 128, got {engine.head_dim}"
+    import numpy as np
+    assert engine.kv_dtype is np.float16, f"expected fp16 KV cache for the 14B CUDA build, got {engine.kv_dtype}"
     print("Architecture matches models/qwen3_14b_cuda/genai_config.json — engine is reading config, not hardcoded 8B values.")
 
     messages = [

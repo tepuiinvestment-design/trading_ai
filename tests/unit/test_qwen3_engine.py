@@ -161,3 +161,84 @@ def test_genai_config_preferred_over_hf_config_when_both_present(tmp_path):
 def test_raises_when_no_config_file_present(tmp_path):
     with pytest.raises(FileNotFoundError):
         _load_model_architecture(str(tmp_path))
+
+
+# --- KV-cache dtype read from the ONNX graph (2026-09-24) -------------------
+# The 8B CPU build takes fp32 KV cache; the 14B CUDA build takes fp16. The
+# old hardcoded fp32 constant would crash the 14B build on its first run.
+
+import numpy as np
+
+from models.engine.qwen3_engine import (
+    TRT_RTX_PROVIDER,
+    _kv_cache_dtype_from_session,
+    resolve_providers,
+)
+
+
+class _FakeInput:
+    def __init__(self, name, type_):
+        self.name = name
+        self.type = type_
+
+
+class _FakeSession:
+    def __init__(self, kv_type, num_layers):
+        self._inputs = [
+            _FakeInput("input_ids", "tensor(int64)"),
+            _FakeInput("attention_mask", "tensor(int64)"),
+        ]
+        for i in range(num_layers):
+            self._inputs.append(_FakeInput(f"past_key_values.{i}.key", kv_type))
+            self._inputs.append(_FakeInput(f"past_key_values.{i}.value", kv_type))
+
+    def get_inputs(self):
+        return self._inputs
+
+
+def _kv_names(n):
+    return [f"past_key_values.{i}.key" for i in range(n)] + [
+        f"past_key_values.{i}.value" for i in range(n)
+    ]
+
+
+def test_kv_dtype_fp32_for_8b_cpu_build():
+    session = _FakeSession("tensor(float)", 36)
+    assert _kv_cache_dtype_from_session(session, _kv_names(36)) is np.float32
+
+
+def test_kv_dtype_fp16_for_14b_cuda_build():
+    session = _FakeSession("tensor(float16)", 40)
+    assert _kv_cache_dtype_from_session(session, _kv_names(40)) is np.float16
+
+
+def test_kv_dtype_raises_when_config_layers_exceed_graph():
+    """Config says 40 layers but graph only has 36 -> fail loudly, not
+    silently mis-shape the cache."""
+    session = _FakeSession("tensor(float)", 36)
+    with pytest.raises(ValueError, match="missing"):
+        _kv_cache_dtype_from_session(session, _kv_names(40))
+
+
+# --- Execution provider resolution ------------------------------------------
+
+def test_cpu_mode_resolves_to_cpu():
+    assert resolve_providers("cpu", available=["CPUExecutionProvider"]) == [
+        "CPUExecutionProvider"
+    ]
+
+
+def test_gpu_mode_uses_trt_rtx_when_available():
+    available = [TRT_RTX_PROVIDER, "CPUExecutionProvider"]
+    assert resolve_providers("gpu", available=available) == [
+        TRT_RTX_PROVIDER,
+        "CPUExecutionProvider",
+    ]
+
+
+def test_gpu_mode_warns_and_falls_back_when_trt_rtx_missing():
+    """Plain CPU onnxruntime wheel: must warn instead of silently running
+    on CPU while claiming GPU."""
+    with pytest.warns(RuntimeWarning, match="not available"):
+        providers = resolve_providers("gpu", available=["CPUExecutionProvider"])
+    assert providers == ["CPUExecutionProvider"]

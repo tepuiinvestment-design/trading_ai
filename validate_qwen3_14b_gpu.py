@@ -51,6 +51,15 @@ def main():
         )
         sys.exit(1)
     print(f"Loaded in {time.time() - load_start:.1f}s")
+    print(f"Active providers: {engine.active_providers}  |  KV-cache dtype: {engine.kv_dtype.__name__}")
+    if engine.active_providers[0] == "CPUExecutionProvider":
+        print(
+            "\nFAILED: session is running on CPU, not the GPU. The TensorRT-RTX "
+            "execution provider isn't available in this onnxruntime install "
+            "(the plain `onnxruntime` pip package is CPU-only). This is NOT a "
+            "valid GPU result — install the TensorRT-RTX build of onnxruntime first."
+        )
+        sys.exit(1)
 
     # Sanity-check the architecture actually read from this model's own
     # config, not leftover 8B constants.

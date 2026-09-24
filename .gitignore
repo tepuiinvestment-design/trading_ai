@@ -5,3 +5,13 @@ __pycache__/
 models/*/*.onnx
 models/*/*.onnx.data
 data/vectorstore/
+
+# Downloaded model folders (weights, tokenizers, configs) — re-downloadable,
+# ~36MB of tokenizer/config files even with the .onnx weights excluded above.
+# Engine/tokenizer *code* in models/*.py and models/engine/ stays tracked.
+models/phi3_medium/
+models/qwen3_*/
+models/bge_*/
+
+# one-off helper, not part of the project
+PASTE_IN_TERMINAL.txt
