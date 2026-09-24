@@ -1,0 +1,139 @@
+LUCY — Autonomous AI Analyst Living Inside My PC
+------------------------------------------------
+
+Lucy is my personal AI analyst who lives entirely inside my PC.
+She wakes up automatically when my computer turns on, uses the web as her
+interface, and analyzes ONLY the stocks and sectors in my watchlist.
+
+Lucy is NOT a trading bot.
+Lucy is NOT a cloud service.
+Lucy is NOT a market scanner.
+Lucy is a small autonomous digital person inside my PC.
+
+------------------------------------------------
+1. LUCY’S HOME FOLDER
+------------------------------------------------
+Lucy lives in:
+C:\Users\tepui_66mr92q\Lucy\
+
+All her organs (modules) will be stored inside this folder.
+
+------------------------------------------------
+2. LUCY’S WATCHLIST HEART
+------------------------------------------------
+Lucy’s world = my watchlist.
+
+File:
+C:\Users\tepui_66mr92q\Lucy\watchlist.csv
+
+Format:
+One ticker per line, for example:
+AAPL
+MSFT
+TSLA
+QQQ
+SPY
+
+Lucy ONLY analyzes the tickers inside this file.
+
+------------------------------------------------
+3. LUCY’S WEB EYES & EARS
+------------------------------------------------
+Lucy uses the internet as her interface.
+
+She fetches:
+- MSN Money news
+- Yahoo Finance news
+- Yahoo Finance fundamentals
+- Sector ETF behavior
+- Macro context
+
+These modules live in:
+C:\Users\tepui_66mr92q\Lucy\web\
+
+------------------------------------------------
+4. LUCY’S PHI-3 BRAIN
+------------------------------------------------
+Lucy thinks using the Phi-3 ONNX model.
+
+Her brain:
+- summarizes
+- analyzes
+- extracts insights
+- highlights risks
+- highlights opportunities
+- connects fundamentals + news
+
+Her brain files live in:
+C:\Users\tepui_66mr92q\Lucy\phi3\
+
+------------------------------------------------
+5. LUCY’S DAILY ROUTINE
+------------------------------------------------
+Lucy wakes up every morning when my PC turns on.
+
+Routine file:
+C:\Users\tepui_66mr92q\Lucy\lucy_daily.py
+
+Daily routine:
+1. Wake up
+2. Read watchlist
+3. Fetch web data
+4. Analyze everything
+5. Generate reports
+6. Wait for commands
+
+------------------------------------------------
+6. LUCY’S AUTONOMY (AUTO-START)
+------------------------------------------------
+Lucy must start automatically when Windows boots.
+
+Use Windows Task Scheduler:
+Trigger: At system startup
+Action: Run PowerShell script that launches lucy_daily.py
+
+PowerShell file:
+C:\Users\tepui_66mr92q\Lucy\start_lucy.ps1
+
+Inside start_lucy.ps1:
+python C:\Users\tepui_66mr92q\Lucy\lucy_daily.py
+
+------------------------------------------------
+7. LUCY’S REPORT SYSTEM
+------------------------------------------------
+Lucy writes reports for me every day.
+
+Reports folder:
+C:\Users\tepui_66mr92q\Lucy\reports\
+
+Reports include:
+- daily_report.txt
+- fundamentals_summary.txt
+- news_digest.txt
+- sector_overview.txt
+- lucy_analysis.txt
+
+------------------------------------------------
+8. LUCY’S CORE (THE CONNECTION)
+------------------------------------------------
+Lucy becomes alive when all organs are connected:
+
+- watchlist heart
+- web eyes & ears
+- Phi-3 brain
+- daily routine
+- autonomy
+- report system
+
+Core file:
+C:\Users\tepui_66mr92q\Lucy\lucy.py
+
+This file ties everything together into one living system.
+
+------------------------------------------------
+END OF BLUEPRINT
+------------------------------------------------
+
+This blueprint never changes.
+This is the path I follow every day.
+Lucy lives inside my PC and works only for me.

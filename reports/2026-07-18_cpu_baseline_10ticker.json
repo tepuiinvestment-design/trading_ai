@@ -1,0 +1,841 @@
+[
+  {
+    "status": "ok",
+    "symbol": "CI",
+    "market": {
+      "status": "ok",
+      "symbol": "CI",
+      "price": 281.45,
+      "open": 286.57,
+      "high": 289.66,
+      "low": 279.75,
+      "source": "Yahoo Finance"
+    },
+    "fundamentals": {
+      "status": "ok",
+      "symbol": "CI",
+      "pe": 11.930903,
+      "forward_pe": 8.405847,
+      "peg": 0.85,
+      "div_yield": 2.22,
+      "roe": 0.16268998,
+      "pm": 0.02263,
+      "de": 72.805,
+      "market_cap": 74452647936,
+      "eps_trailing": 23.59,
+      "eps_forward": 33.48265,
+      "revenue_growth": 0.046,
+      "free_cash_flow": 6923375104,
+      "fifty_two_week_low": 239.51,
+      "fifty_two_week_high": 315.47,
+      "analyst_rating": "buy",
+      "analyst_rating_mean": 1.54167,
+      "analyst_count": 24,
+      "target_price_mean": 340.91666,
+      "target_price_low": 290.0,
+      "target_price_high": 400.0,
+      "source": "Yahoo Finance",
+      "pe_label": "low",
+      "forward_pe_label": "low",
+      "peg_label": "undervalued relative to growth",
+      "div_yield_label": "moderate",
+      "roe_label": "good",
+      "pm_label": "low",
+      "de_label": "moderate",
+      "analyst_rating_mean_label": "Buy"
+    },
+    "performance": {
+      "status": "ok",
+      "symbol": "CI",
+      "current_price": 281.45,
+      "return_1mo_pct": -1.28,
+      "return_ytd_pct": 3.42,
+      "return_1yr_pct": -3.55,
+      "return_3yr_pct": 4.62,
+      "return_5yr_pct": 31.97,
+      "history_start_date": "2016-07-18",
+      "source": "Yahoo Finance"
+    },
+    "sector": {
+      "status": "ok",
+      "symbol": "CI",
+      "sector": "Healthcare",
+      "industry": "Healthcare Plans",
+      "sector_etf": {
+        "symbol": "XLV",
+        "price": 161.09,
+        "change_pct": -0.44
+      }
+    },
+    "news": {
+      "status": "ok",
+      "symbol": "CI",
+      "news": [
+        {
+          "headline": "FTC Reaches Settlement With CVS Health Over Insulin Prices",
+          "summary": "The Federal Trade Commission announced a settlement with  CVS Health\u2019s  pharmacy benefit manager business on Tuesday, the agency\u2019s second major agreement this year with drug industry middlemen.  Pharmacy-benefit managers, or PBMs, play a key role in negotiating with drug companies and selecting which prescription drugs will be covered by an insurance plan.  In litigation filed in 2024 during the Biden administration, the commission alleged that rebates and fees collected by major PBMs from drug manufacturers artificially inflated the price of insulin.",
+          "source": "Barrons.com",
+          "published": "2026-07-14T20:47:00Z",
+          "url": "https://www.barrons.com/articles/cvs-health-ftc-settlement-insulin-prices-345ea34e?siteid=yhoof2&yptr=yahoo"
+        }
+      ]
+    },
+    "analysis": "- **Key risks**: High debt-to-equity ratio (moderate) could limit financial flexibility. Recent news about FTC settlements may impact market sentiment.\n\n- **Key opportunities**: Strong analyst ratings with a 'Buy' consensus suggest potential for growth. Low price-to-earnings ratios indicate possible undervaluation.\n\n- **Historical performance**:\n  - 1-month return: -1.28%\n  - YTD return: +3.42%\n  - 1-year return: -3.55%\n  - 3-year return: +4.62%\n  - 5-year return: +31.97%\n\n- **Sector context**: CI operates in the Healthcare sector, specifically within the Healthcare Plans industry. It is part of the XLV ETF, which tracks the healthcare sector.\n\n- **Fundamental strengths/weaknesses**:\n  - Strengths: Very low forward P/E and trailing P/E; strong analyst rating mean ('Buy'); moderate dividend yield.\n  - Weaknesses: Moderate debt-to-equity ratio; relatively low profit margin.\n\n- **Final verdict**: CI presents a compelling investment opportunity due to its attractive valuation metrics and positive analyst sentiment. However, investors should remain cautious given the company's moderate leverage position.",
+    "grounding_review": {
+      "clean": true,
+      "unverified_numbers": [],
+      "unverified_products": []
+    },
+    "tool_calls": []
+  },
+  {
+    "status": "ok",
+    "symbol": "ANET",
+    "market": {
+      "status": "ok",
+      "symbol": "ANET",
+      "price": 168.61,
+      "open": 163.105,
+      "high": 171.43,
+      "low": 157.17,
+      "source": "Yahoo Finance"
+    },
+    "fundamentals": {
+      "status": "ok",
+      "symbol": "ANET",
+      "pe": 57.74315,
+      "forward_pe": 37.74155,
+      "peg": 2.15,
+      "div_yield": null,
+      "roe": 0.31520998,
+      "pm": 0.38317,
+      "de": null,
+      "market_cap": 212308557824,
+      "eps_trailing": 2.92,
+      "eps_forward": 4.46749,
+      "revenue_growth": 0.351,
+      "free_cash_flow": 4362237440,
+      "fifty_two_week_low": 106.987,
+      "fifty_two_week_high": 189.817,
+      "analyst_rating": "strong_buy",
+      "analyst_rating_mean": 1.3,
+      "analyst_count": 27,
+      "target_price_mean": 191.75478,
+      "target_price_low": 164.0,
+      "target_price_high": 220.0,
+      "source": "Yahoo Finance",
+      "pe_label": "high",
+      "forward_pe_label": "high",
+      "peg_label": "high/expensive",
+      "roe_label": "strong",
+      "pm_label": "strong",
+      "analyst_rating_mean_label": "Strong Buy"
+    },
+    "performance": {
+      "status": "ok",
+      "symbol": "ANET",
+      "current_price": 168.61,
+      "return_1mo_pct": 2.23,
+      "return_ytd_pct": 28.68,
+      "return_1yr_pct": 50.57,
+      "return_3yr_pct": 288.7,
+      "return_5yr_pct": 642.26,
+      "history_start_date": "2016-07-18",
+      "source": "Yahoo Finance"
+    },
+    "sector": {
+      "status": "ok",
+      "symbol": "ANET",
+      "sector": "Technology",
+      "industry": "Computer Hardware",
+      "sector_etf": {
+        "symbol": "XLK",
+        "price": 175.59,
+        "change_pct": -1.09
+      }
+    },
+    "news": {
+      "status": "ok",
+      "symbol": "ANET",
+      "news": []
+    },
+    "analysis": "- **Key risks**: High price-to-earnings (PE) ratio indicates potential overvaluation. Also, the stock has not been covered by recent news.\n\n- **Key opportunities**: Strong analyst ratings and high target prices suggest strong institutional confidence in future growth. The company is positioned within a growing sector.\n\n- **Historical performance**:\n  - 1-month return: +2.23%\n  - YTD return: +28.68%\n  - 1-year return: +50.57%\n  - 3-year return: +288.7%\n  - 5-year return: +642.26%\n\n- **Sector context**: ANET operates in the Technology sector, specifically within the Computer Hardware industry. It is part of the XLK ETF, which tracks the broader technology market.\n\n- **Fundamental strengths/weaknesses**:\n  - Strengths: Strong analyst rating (\"Strong Buy\") with an average rating of \"Strong Buy\". High forward PE ratio suggests optimism about future earnings.\n  - Weaknesses: Very high current PE ratio may indicate overvaluation relative to historical levels or compared to peers. This could pose risk if earnings do not meet expectations.\n\n- **Final verdict**: ANET presents a compelling investment opportunity due to its strong analyst consensus and optimistic future earnings projections. However, investors should remain cautious given the stock's elevated valuation metrics.",
+    "grounding_review": {
+      "clean": true,
+      "unverified_numbers": [],
+      "unverified_products": []
+    },
+    "tool_calls": []
+  },
+  {
+    "status": "ok",
+    "symbol": "CRUS",
+    "market": {
+      "status": "ok",
+      "symbol": "CRUS",
+      "price": 137.98,
+      "open": 134.02,
+      "high": 138.5869,
+      "low": 134.02,
+      "source": "Yahoo Finance"
+    },
+    "fundamentals": {
+      "status": "ok",
+      "symbol": "CRUS",
+      "pe": 17.57707,
+      "forward_pe": 14.578688,
+      "peg": 9.35,
+      "div_yield": null,
+      "roe": 0.20327,
+      "pm": 0.20748,
+      "de": 6.296,
+      "market_cap": 6961465856,
+      "eps_trailing": 7.85,
+      "eps_forward": 9.4645,
+      "revenue_growth": 0.057,
+      "free_cash_flow": 505731264,
+      "fifty_two_week_low": 92.02,
+      "fifty_two_week_high": 180.42,
+      "analyst_rating": "buy",
+      "analyst_rating_mean": 1.8,
+      "analyst_count": 4,
+      "target_price_mean": 181.75,
+      "target_price_low": 140.0,
+      "target_price_high": 200.0,
+      "source": "Yahoo Finance",
+      "pe_label": "moderate",
+      "forward_pe_label": "low",
+      "peg_label": "high/expensive",
+      "roe_label": "strong",
+      "pm_label": "strong",
+      "de_label": "low/conservative leverage",
+      "analyst_rating_mean_label": "Buy"
+    },
+    "performance": {
+      "status": "ok",
+      "symbol": "CRUS",
+      "current_price": 137.98,
+      "return_1mo_pct": -13.91,
+      "return_ytd_pct": 16.44,
+      "return_1yr_pct": 33.47,
+      "return_3yr_pct": 73.54,
+      "return_5yr_pct": 65.05,
+      "history_start_date": "2016-07-18",
+      "source": "Yahoo Finance"
+    },
+    "sector": {
+      "status": "ok",
+      "symbol": "CRUS",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "sector_etf": {
+        "symbol": "XLK",
+        "price": 175.59,
+        "change_pct": -1.09
+      }
+    },
+    "news": {
+      "status": "ok",
+      "symbol": "CRUS",
+      "news": []
+    },
+    "analysis": "- **Key risks**: High PEG label indicates potential overvaluation; recent 1-month return of -13.91% shows volatility.\n  \n- **Key opportunities**: Strong ROE and PM labels indicate efficient capital use; analysts rate the stock as \"Buy\" with a target price mean of $181.75.\n\n- **Historical performance**:\n  - 1-month: -13.91%\n  - YTD: +16.44%\n  - 1-year: +33.47%\n  - 3-years: +73.54%\n  - 5-years: +65.05%\n\n- **Sector context**: CRUS operates in the Technology sector, specifically within the Semiconductors industry. It is part of the XLK ETF (Technology Select Sector SPDR Fund).\n\n- **Fundamental strengths/weaknesses**:\n  - Strengths: Strong ROE and PM labels; moderate PE ratio; strong analyst rating (\"Buy\") with high target prices.\n  - Weaknesses: High PEG label suggests possible overvaluation relative to growth expectations; forward PE is low but this may not be sustainable if earnings do not grow at expected rates.\n\n- **Final verdict**: CRUS presents a compelling investment opportunity due to its strong fundamentals, robust analyst ratings, and positive historical returns. However, investors should remain cautious given the stock's relatively high valuation metrics compared to peers.",
+    "grounding_review": {
+      "clean": true,
+      "unverified_numbers": [],
+      "unverified_products": []
+    },
+    "tool_calls": []
+  },
+  {
+    "status": "ok",
+    "symbol": "LRCX",
+    "market": {
+      "status": "ok",
+      "symbol": "LRCX",
+      "price": 313.3,
+      "open": 303.83,
+      "high": 322.0699,
+      "low": 298.65,
+      "source": "Yahoo Finance"
+    },
+    "fundamentals": {
+      "status": "ok",
+      "symbol": "LRCX",
+      "pe": 59.224953,
+      "forward_pe": 38.766644,
+      "peg": 1.81,
+      "div_yield": 0.33,
+      "roe": 0.66762,
+      "pm": 0.30938998,
+      "de": 35.282,
+      "market_cap": 391803895808,
+      "eps_trailing": 5.29,
+      "eps_forward": 8.08169,
+      "revenue_growth": 0.238,
+      "free_cash_flow": 4352341504,
+      "fifty_two_week_low": 90.94,
+      "fifty_two_week_high": 438.5,
+      "analyst_rating": "strong_buy",
+      "analyst_rating_mean": 1.48571,
+      "analyst_count": 31,
+      "target_price_mean": 366.48386,
+      "target_price_low": 220.0,
+      "target_price_high": 500.0,
+      "source": "Yahoo Finance",
+      "pe_label": "high",
+      "forward_pe_label": "high",
+      "peg_label": "fairly valued",
+      "div_yield_label": "low",
+      "roe_label": "strong",
+      "pm_label": "strong",
+      "de_label": "low/conservative leverage",
+      "analyst_rating_mean_label": "Strong Buy"
+    },
+    "performance": {
+      "status": "ok",
+      "symbol": "LRCX",
+      "current_price": 313.3,
+      "return_1mo_pct": -16.27,
+      "return_ytd_pct": 83.37,
+      "return_1yr_pct": 212.56,
+      "return_3yr_pct": 390.65,
+      "return_5yr_pct": 460.83,
+      "history_start_date": "2016-07-18",
+      "source": "Yahoo Finance"
+    },
+    "sector": {
+      "status": "ok",
+      "symbol": "LRCX",
+      "sector": "Technology",
+      "industry": "Semiconductor Equipment & Materials",
+      "sector_etf": {
+        "symbol": "XLK",
+        "price": 175.59,
+        "change_pct": -1.09
+      }
+    },
+    "news": {
+      "status": "ok",
+      "symbol": "LRCX",
+      "news": []
+    },
+    "analysis": "- **Key risks**: High price-to-earnings (P/E) ratio indicates potential overvaluation. Low dividend yield may not appeal to income-focused investors.\n\n- **Key opportunities**: Strong analyst ratings and high forward P/E suggest strong growth expectations. The company operates in a growing semiconductor equipment & materials sector, offering long-term industry tailwinds.\n\n- **Historical performance**:\n  - 1-month return: -16.27%\n  - YTD return: +83.37%\n  - 1-year return: +212.56%\n  - 3-year return: +390.65%\n  - 5-year return: +460.83%\n\n- **Sector context**: LRCX is part of the Technology sector, specifically within the Semiconductor Equipment & Materials sub-sector. This sector has shown consistent growth due to increasing demand for semiconductors across various industries.\n\n- **Fundamental strengths/weaknesses**:\n  - **Strengths**: Strong earnings growth with trailing EPS at $5.29 and forward EPS at $8.08. High revenue growth rate of 23.8%. Strong operating margins.\n  - **Weaknesses**: Very high P/E ratio suggests possible overvaluation relative to earnings. Forward P/E ratio remains relatively high compared to historical averages, indicating continued investor optimism that might be unsustainable if earnings do not meet expectations.\n\n- **Final verdict**: LRCX presents a compelling investment opportunity given its strong fundamentals, robust earnings growth, and favorable analyst sentiment. However, investors should remain cautious due to the stock's elevated valuation metrics.",
+    "grounding_review": {
+      "clean": true,
+      "unverified_numbers": [],
+      "unverified_products": []
+    },
+    "tool_calls": []
+  },
+  {
+    "status": "ok",
+    "symbol": "MU",
+    "market": {
+      "status": "ok",
+      "symbol": "MU",
+      "price": 848.95,
+      "open": 822.525,
+      "high": 903.93,
+      "low": 804.0,
+      "source": "Yahoo Finance"
+    },
+    "fundamentals": {
+      "status": "ok",
+      "symbol": "MU",
+      "pe": 19.193987,
+      "forward_pe": 5.630772,
+      "peg": 0.12,
+      "div_yield": 0.06,
+      "roe": 0.66638,
+      "pm": 0.55906,
+      "de": 6.33,
+      "market_cap": 958798299136,
+      "eps_trailing": 44.23,
+      "eps_forward": 150.76973,
+      "revenue_growth": 3.457,
+      "free_cash_flow": 7639499776,
+      "fifty_two_week_low": 103.38,
+      "fifty_two_week_high": 1255.0,
+      "analyst_rating": "strong_buy",
+      "analyst_rating_mean": 1.42222,
+      "analyst_count": 42,
+      "target_price_mean": 1491.9524,
+      "target_price_low": 361.0,
+      "target_price_high": 2200.0,
+      "source": "Yahoo Finance",
+      "pe_label": "moderate",
+      "forward_pe_label": "low",
+      "peg_label": "undervalued relative to growth",
+      "div_yield_label": "low",
+      "roe_label": "strong",
+      "pm_label": "strong",
+      "de_label": "low/conservative leverage",
+      "analyst_rating_mean_label": "Strong Buy"
+    },
+    "performance": {
+      "status": "ok",
+      "symbol": "MU",
+      "current_price": 848.95,
+      "return_1mo_pct": -18.61,
+      "return_ytd_pct": 197.62,
+      "return_1yr_pct": 650.76,
+      "return_3yr_pct": 1221.89,
+      "return_5yr_pct": 1060.64,
+      "history_start_date": "2016-07-18",
+      "source": "Yahoo Finance"
+    },
+    "sector": {
+      "status": "ok",
+      "symbol": "MU",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "sector_etf": {
+        "symbol": "XLK",
+        "price": 175.59,
+        "change_pct": -1.09
+      }
+    },
+    "news": {
+      "status": "ok",
+      "symbol": "MU",
+      "news": [
+        {
+          "headline": "SK Hynix Is Today\u2019s Standout Chip Stock for an Unusual Reason",
+          "summary": "The company\u2019s American depositary receipts were up as much as 8.3% by midday, but closed with a 1.1% gain at $154.03.  Micron Technology  SK Hynix\u2019s biggest U.S. rival finished down 0.5%.  SK Hynix plunged 14% on Thuesday.",
+          "source": "Barrons.com",
+          "published": "2026-07-17T21:39:00Z",
+          "url": "https://www.barrons.com/articles/sk-hynix-stock-price-chips-4ea14bb1?siteid=yhoof2&yptr=yahoo"
+        }
+      ]
+    },
+    "analysis": "- **Key risks**: High debt-to-equity ratio (6.33) indicates potential financial stress; also, the stock has experienced a significant 1-month decline of -18.61%.\n\n- **Key opportunities**: Strong analyst rating (\"Strong Buy\") and high target price mean (1491.9524) suggest strong growth expectations; also, the company is in the fast-growing semiconductor industry.\n\n- **Historical performance**:\n  - 1-month return: -18.61%\n  - YTD return: +197.62%\n  - 1-year return: +650.76%\n  - 3-year return: +1221.89%\n  - 5-year return: +1060.64%\n\n- **Sector context**: Micron Technology operates within the Technology sector, specifically in the Semiconductors industry \u2014 one of the fastest growing sectors globally due to increasing demand for electronic devices across all industries.\n\n- **Fundamental strengths/weaknesses**:\n  - Strengths: Strong forward PE label ('low') suggests undervaluation relative to future earnings; strong ROE label ('strong') shows efficient use of equity capital.\n  - Weaknesses: Moderate P/E label ('moderate') implies that the current valuation may not be significantly higher than historical averages; low dividend yield label ('low') suggests limited income generation from dividends alone.\n\n- **Final verdict**: Micron Technology presents a compelling investment opportunity with strong fundamentals, robust historical returns, and favorable analyst sentiment.",
+    "grounding_review": {
+      "clean": true,
+      "unverified_numbers": [],
+      "unverified_products": []
+    },
+    "tool_calls": []
+  },
+  {
+    "status": "ok",
+    "symbol": "NVDA",
+    "market": {
+      "status": "ok",
+      "symbol": "NVDA",
+      "price": 202.81,
+      "open": 202.4,
+      "high": 206.645,
+      "low": 197.97,
+      "source": "Yahoo Finance"
+    },
+    "fundamentals": {
+      "status": "ok",
+      "symbol": "NVDA",
+      "pe": 31.058191,
+      "forward_pe": 15.80593,
+      "peg": 0.56,
+      "div_yield": 0.49,
+      "roe": 1.14288,
+      "pm": 0.62966,
+      "de": 6.555,
+      "market_cap": 4912260841472,
+      "eps_trailing": 6.53,
+      "eps_forward": 12.83126,
+      "revenue_growth": 0.852,
+      "free_cash_flow": 46335873024,
+      "fifty_two_week_low": 164.07,
+      "fifty_two_week_high": 236.54,
+      "analyst_rating": "strong_buy",
+      "analyst_rating_mean": 1.29508,
+      "analyst_count": 58,
+      "target_price_mean": 302.31033,
+      "target_price_low": 180.0,
+      "target_price_high": 500.0,
+      "source": "Yahoo Finance",
+      "pe_label": "high",
+      "forward_pe_label": "moderate",
+      "peg_label": "undervalued relative to growth",
+      "div_yield_label": "low",
+      "roe_label": "strong",
+      "pm_label": "strong",
+      "de_label": "low/conservative leverage",
+      "analyst_rating_mean_label": "Strong Buy"
+    },
+    "performance": {
+      "status": "ok",
+      "symbol": "NVDA",
+      "current_price": 202.81,
+      "return_1mo_pct": -0.9,
+      "return_ytd_pct": 8.88,
+      "return_1yr_pct": 17.39,
+      "return_3yr_pct": 327.85,
+      "return_5yr_pct": 1020.6,
+      "history_start_date": "2016-07-18",
+      "source": "Yahoo Finance"
+    },
+    "sector": {
+      "status": "ok",
+      "symbol": "NVDA",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "sector_etf": {
+        "symbol": "XLK",
+        "price": 175.59,
+        "change_pct": -1.09
+      }
+    },
+    "news": {
+      "status": "ok",
+      "symbol": "NVDA",
+      "news": []
+    },
+    "analysis": "- **Key risks**: High forward PE suggests potential overvaluation; high debt-to-equity ratio (6.55) indicates significant leverage risk.\n\n- **Key opportunities**: Strong analyst rating (\"Strong Buy\") and positive long-term growth, with 3-year return of 327.85% and a 5-year return of 1020.6%.\n\n- **Historical performance**:\n  - Return_1mo_pct: -0.9\n  - Return_ytd_pct: 8.88\n  - Return_1yr_pct: 17.39\n  - Return_3yr_pct: 327.85\n  - Return_5yr_pct: 1020.6\n\n- **Sector context**: NVIDIA operates in the Technology sector, specifically within the Semiconductors industry. It is part of the XLK ETF, which tracks the broader technology market.\n\n- **Fundamental strengths/weaknesses**:\n  - Strengths: Strong analyst ratings (\"Strong Buy\"), strong price momentum reflected in historical returns, and robust revenue growth.\n  - Weaknesses: High forward PE relative to earnings expectations may indicate overvaluation or higher volatility ahead.\n\n- **Final verdict**: NVIDIA presents a compelling investment opportunity due to its strong fundamentals, robust historical returns, and favorable analyst sentiment.",
+    "grounding_review": {
+      "clean": true,
+      "unverified_numbers": [],
+      "unverified_products": []
+    },
+    "tool_calls": []
+  },
+  {
+    "status": "ok",
+    "symbol": "TSM",
+    "market": {
+      "status": "ok",
+      "symbol": "TSM",
+      "price": 398.37,
+      "open": 392.12,
+      "high": 404.7,
+      "low": 386.034,
+      "source": "Yahoo Finance"
+    },
+    "fundamentals": {
+      "status": "ok",
+      "symbol": "TSM",
+      "pe": 29.840448,
+      "forward_pe": 18.759014,
+      "peg": 1.01,
+      "div_yield": 0.95,
+      "roe": 0.39969003,
+      "pm": 0.49923,
+      "de": 15.174,
+      "market_cap": 2066135646208,
+      "eps_trailing": 13.35,
+      "eps_forward": 21.23619,
+      "revenue_growth": 0.36,
+      "free_cash_flow": 739057991680,
+      "fifty_two_week_low": 223.7,
+      "fifty_two_week_high": 479.0,
+      "analyst_rating": "strong_buy",
+      "analyst_rating_mean": 1.42105,
+      "analyst_count": 18,
+      "target_price_mean": 520.3715,
+      "target_price_low": 354.0,
+      "target_price_high": 700.0,
+      "source": "Yahoo Finance",
+      "pe_label": "high",
+      "forward_pe_label": "moderate",
+      "peg_label": "fairly valued",
+      "div_yield_label": "low",
+      "roe_label": "strong",
+      "pm_label": "strong",
+      "de_label": "low/conservative leverage",
+      "analyst_rating_mean_label": "Strong Buy"
+    },
+    "performance": {
+      "status": "ok",
+      "symbol": "TSM",
+      "current_price": 398.37,
+      "return_1mo_pct": -7.82,
+      "return_ytd_pct": 31.77,
+      "return_1yr_pct": 64.0,
+      "return_3yr_pct": 302.96,
+      "return_5yr_pct": 273.39,
+      "history_start_date": "2016-07-18",
+      "source": "Yahoo Finance"
+    },
+    "sector": {
+      "status": "ok",
+      "symbol": "TSM",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "sector_etf": {
+        "symbol": "XLK",
+        "price": 175.59,
+        "change_pct": -1.09
+      }
+    },
+    "news": {
+      "status": "ok",
+      "symbol": "TSM",
+      "news": [
+        {
+          "headline": "This week's AI winners and losers",
+          "summary": "Yahoo Finance's AI winners and losers include TSMC, Moonshot AI, IBM, and the chip industry.",
+          "source": "Yahoo Finance",
+          "published": "2026-07-18T13:16:54Z",
+          "url": "https://finance.yahoo.com/news/this-weeks-ai-winners-and-losers-131654035.html"
+        }
+      ]
+    },
+    "analysis": "- **Key risks**: High price-to-earnings (PE) ratio indicates potential overvaluation. The semiconductor industry is highly cyclical and sensitive to global economic conditions.\n\n- **Key opportunities**: Strong earnings growth, with forward PE at a moderate level, suggests strong fundamentals and future upside potential.\n\n- **Historical performance**:\n  - 1-month return: -7.82%\n  - YTD return: +31.77%\n  - 1-year return: +64.0%\n  - 3-year return: +302.96%\n  - 5-year return: +273.39%\n\n- **Sector context**: TSMC operates in the Technology sector, specifically within the Semiconductors industry. It's part of the XLK ETF which tracks the broader technology market.\n\n- **Fundamental strengths/weaknesses**:\n  - **Strengths**: Strong revenue growth across all time frames; high returns on equity (ROE); strong profit margins.\n  - **Weaknesses**: High current PE ratio compared to historical averages may indicate some overvaluation or increased volatility expectations.\n\n- **Final verdict**: TSMC presents a compelling investment opportunity due to its robust financial performance, strong fundamental metrics, and leadership position in the semiconductors industry.",
+    "grounding_review": {
+      "clean": true,
+      "unverified_numbers": [],
+      "unverified_products": []
+    },
+    "tool_calls": []
+  },
+  {
+    "status": "ok",
+    "symbol": "VLO",
+    "market": {
+      "status": "ok",
+      "symbol": "VLO",
+      "price": 309.65,
+      "open": 306.28,
+      "high": 309.87,
+      "low": 302.5201,
+      "source": "Yahoo Finance"
+    },
+    "fundamentals": {
+      "status": "ok",
+      "symbol": "VLO",
+      "pe": 22.6187,
+      "forward_pe": 13.890322,
+      "peg": 4.08,
+      "div_yield": 1.55,
+      "roe": 0.1585,
+      "pm": 0.03569,
+      "de": 42.664,
+      "market_cap": 91945230336,
+      "eps_trailing": 13.69,
+      "eps_forward": 22.2925,
+      "revenue_growth": 0.066,
+      "free_cash_flow": 4786625024,
+      "fifty_two_week_low": 130.78,
+      "fifty_two_week_high": 309.9,
+      "analyst_rating": "buy",
+      "analyst_rating_mean": 2.42105,
+      "analyst_count": 18,
+      "target_price_mean": 276.33334,
+      "target_price_low": 190.0,
+      "target_price_high": 340.0,
+      "source": "Yahoo Finance",
+      "pe_label": "moderate",
+      "forward_pe_label": "low",
+      "peg_label": "high/expensive",
+      "div_yield_label": "moderate",
+      "roe_label": "good",
+      "pm_label": "low",
+      "de_label": "low/conservative leverage",
+      "analyst_rating_mean_label": "Buy"
+    },
+    "performance": {
+      "status": "ok",
+      "symbol": "VLO",
+      "current_price": 309.65,
+      "return_1mo_pct": 29.14,
+      "return_ytd_pct": 92.29,
+      "return_1yr_pct": 119.52,
+      "return_3yr_pct": 192.54,
+      "return_5yr_pct": 463.0,
+      "history_start_date": "2016-07-18",
+      "source": "Yahoo Finance"
+    },
+    "sector": {
+      "status": "ok",
+      "symbol": "VLO",
+      "sector": "Energy",
+      "industry": "Oil & Gas Refining & Marketing",
+      "sector_etf": {
+        "symbol": "XLE",
+        "price": 57.68,
+        "change_pct": 1.16
+      }
+    },
+    "news": {
+      "status": "ok",
+      "symbol": "VLO",
+      "news": [
+        {
+          "headline": "Refining Margins Hit a Record. What That Means for Gas Prices.",
+          "summary": "Companies like Valero, Phillips 66 and Marathon Petroleum are benefiting from record margins for turning crude oil into fuel.",
+          "source": "Barrons.com",
+          "published": "2026-07-17T21:56:00Z",
+          "url": "https://www.barrons.com/articles/valero-philips-66-oil-energy-gas-prices-e3498a29?siteid=yhoof2&yptr=yahoo"
+        }
+      ]
+    },
+    "analysis": "- **Key risks**: High forward PE suggests overvaluation; volatile oil prices could impact refining margins and profitability.\n\n- **Key opportunities**: Strong refining margins are driving profits; positive long-term returns (5-year return of 463.0%) indicate strong growth potential.\n\n- **Historical performance**:\n  - 1-month: +29.14%\n  - YTD: +92.29%\n  - 1-year: +119.52%\n  - 3-years: +192.54%\n  - 5-years: +463.0%\n\n- **Sector context**: VLO operates in the Energy sector, specifically within the Oil & Gas Refining & Marketing industry. It is part of the XLE ETF which tracks the S&P Global Clean Energy Index.\n\n- **Fundamental strengths/weaknesses**:\n  - Strengths: Moderate trailing P/E ratio indicates reasonable valuation; high free cash flow supports financial strength.\n  - Weaknesses: High forward P/E ratio may suggest overvaluation relative to future earnings expectations; moderate dividend yield compared to other energy stocks might be seen as a weakness for income-focused investors.\n\n- **Final verdict**: Valero's stock has delivered impressive long-term gains with strong recent performance driven by record refining margins.",
+    "grounding_review": {
+      "clean": true,
+      "unverified_numbers": [],
+      "unverified_products": []
+    },
+    "tool_calls": []
+  },
+  {
+    "status": "ok",
+    "symbol": "EOG",
+    "market": {
+      "status": "ok",
+      "symbol": "EOG",
+      "price": 139.89,
+      "open": 139.27,
+      "high": 141.11,
+      "low": 138.7,
+      "source": "Yahoo Finance"
+    },
+    "fundamentals": {
+      "status": "ok",
+      "symbol": "EOG",
+      "pe": 13.755162,
+      "forward_pe": 9.564089,
+      "peg": 1.11,
+      "div_yield": 2.92,
+      "roe": 0.18195,
+      "pm": 0.23322001,
+      "de": 26.873,
+      "market_cap": 74509410304,
+      "eps_trailing": 10.17,
+      "eps_forward": 14.62659,
+      "revenue_growth": 0.156,
+      "free_cash_flow": 2864250112,
+      "fifty_two_week_low": 101.59,
+      "fifty_two_week_high": 151.87,
+      "analyst_rating": "buy",
+      "analyst_rating_mean": 2.16667,
+      "analyst_count": 27,
+      "target_price_mean": 157.33333,
+      "target_price_low": 129.0,
+      "target_price_high": 196.0,
+      "source": "Yahoo Finance",
+      "pe_label": "low",
+      "forward_pe_label": "low",
+      "peg_label": "fairly valued",
+      "div_yield_label": "moderate",
+      "roe_label": "good",
+      "pm_label": "strong",
+      "de_label": "low/conservative leverage",
+      "analyst_rating_mean_label": "Buy"
+    },
+    "performance": {
+      "status": "ok",
+      "symbol": "EOG",
+      "current_price": 139.89,
+      "return_1mo_pct": 5.76,
+      "return_ytd_pct": 36.54,
+      "return_1yr_pct": 22.23,
+      "return_3yr_pct": 26.72,
+      "return_5yr_pct": 139.68,
+      "history_start_date": "2016-07-18",
+      "source": "Yahoo Finance"
+    },
+    "sector": {
+      "status": "ok",
+      "symbol": "EOG",
+      "sector": "Energy",
+      "industry": "Oil & Gas E&P",
+      "sector_etf": {
+        "symbol": "XLE",
+        "price": 57.68,
+        "change_pct": 1.16
+      }
+    },
+    "news": {
+      "status": "ok",
+      "symbol": "EOG",
+      "news": []
+    },
+    "analysis": "- **Key risks**: High leverage could amplify losses; volatile energy sector subject to price swings and geopolitical events.\n\n- **Key opportunities**: Strong fundamentals with low P/E ratios suggest undervaluation; potential for growth in oil & gas E&P industry.\n\n- **Historical performance**:\n  - 1-month return: +5.76%\n  - YTD return: +36.54%\n  - 1-year return: +22.23%\n  - 3-year return: +26.72%\n  - 5-year return: +139.68%\n\n- **Sector context**: Energy sector, specifically the Oil & Gas Exploration and Production (E&P) subsector, which is highly sensitive to global crude prices and supply-demand dynamics.\n\n- **Fundamental strengths/weaknesses**:\n  - Strengths: Low forward P/E ratio suggests strong earnings power relative to stock price; high dividend yield indicates attractive income stream.\n  - Weaknesses: Moderate debt-to-equity ratio may indicate some financial risk if not managed properly.\n\n- **Final verdict**: EOG presents a compelling investment opportunity due to its strong fundamentals, favorable valuation metrics, and exposure to a resilient energy sector.",
+    "grounding_review": {
+      "clean": true,
+      "unverified_numbers": [],
+      "unverified_products": []
+    },
+    "tool_calls": []
+  },
+  {
+    "status": "ok",
+    "symbol": "NRG",
+    "market": {
+      "status": "ok",
+      "symbol": "NRG",
+      "price": 129.11,
+      "open": 130.55,
+      "high": 132.3,
+      "low": 128.5229,
+      "source": "Yahoo Finance"
+    },
+    "fundamentals": {
+      "status": "ok",
+      "symbol": "NRG",
+      "pe": 143.45557,
+      "forward_pe": 11.24027,
+      "peg": 0.6,
+      "div_yield": 1.47,
+      "roe": 0.062480003,
+      "pm": 0.00738,
+      "de": 479.237,
+      "market_cap": 27240462336,
+      "eps_trailing": 0.9,
+      "eps_forward": 11.48638,
+      "revenue_growth": 0.195,
+      "free_cash_flow": 431624992,
+      "fifty_two_week_low": 120.11,
+      "fifty_two_week_high": 189.96,
+      "analyst_rating": "buy",
+      "analyst_rating_mean": 1.58824,
+      "analyst_count": 17,
+      "target_price_mean": 198.35294,
+      "target_price_low": 99.0,
+      "target_price_high": 267.0,
+      "source": "Yahoo Finance",
+      "pe_label": "high",
+      "forward_pe_label": "low",
+      "peg_label": "undervalued relative to growth",
+      "div_yield_label": "moderate",
+      "roe_label": "low",
+      "pm_label": "low",
+      "de_label": "high leverage",
+      "analyst_rating_mean_label": "Buy"
+    },
+    "performance": {
+      "status": "ok",
+      "symbol": "NRG",
+      "current_price": 129.11,
+      "return_1mo_pct": -2.29,
+      "return_ytd_pct": -18.42,
+      "return_1yr_pct": -11.39,
+      "return_3yr_pct": 271.61,
+      "return_5yr_pct": 264.74,
+      "history_start_date": "2016-07-18",
+      "source": "Yahoo Finance"
+    },
+    "sector": {
+      "status": "ok",
+      "symbol": "NRG",
+      "sector": "Utilities",
+      "industry": "Utilities - Independent Power Producers",
+      "sector_etf": {
+        "symbol": "XLU",
+        "price": 45.17,
+        "change_pct": -0.66
+      }
+    },
+    "news": {
+      "status": "ok",
+      "symbol": "NRG",
+      "news": []
+    },
+    "analysis": "- **Key risks**: High leverage (de_label: 'high leverage') and low return on equity (roe_label: 'low').  \n- **Key opportunities**: Strong 3-year and 5-year returns, indicating potential for long-term growth.  \n- **Historical performance**: Return_1mo_pct: -2.29; return_ytd_pct: -18.42; return_1yr_pct: -11.39; return_3yr_pct: 271.61; return_5yr_pct: 264.74.  \n\n- **Sector context**: NRG operates in the Utilities sector, specifically within the Independent Power Producers industry. It is part of a broader ETF that tracks utility stocks.  \n\n- **Fundamental strengths/weaknesses**: Forward PE label: 'low' indicates undervaluation relative to future earnings. However, high debt-to-equity ratio (de_label: 'high leverage')) suggests significant financial risk.\n\n- **Final verdict**: NRG shows strong long-term growth with impressive 3-year and 5-year returns. However, its current valuation appears attractive given its forward PE, but it carries substantial financial risk due to its high leverage.",
+    "grounding_review": {
+      "clean": true,
+      "unverified_numbers": [],
+      "unverified_products": []
+    },
+    "tool_calls": []
+  }
+]

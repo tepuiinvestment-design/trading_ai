@@ -1,0 +1,112 @@
+============================= test session starts =============================
+platform win32 -- Python 3.14.6, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\tepui_66mr92q\trading_ai\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\tepui_66mr92q\trading_ai
+configfile: pytest.ini
+plugins: anyio-4.14.0
+collecting ... collected 70 items / 18 deselected / 52 selected
+
+tests/unit/test_chat_qwen3.py::test_build_chatml_prompt_basic_structure PASSED [  1%]
+tests/unit/test_chat_qwen3.py::test_enable_thinking_skips_suppression_block PASSED [  3%]
+tests/unit/test_chat_qwen3.py::test_tools_are_injected_into_system_message PASSED [  5%]
+tests/unit/test_chat_qwen3.py::test_tools_inserted_as_new_system_message_when_none_exists PASSED [  7%]
+tests/unit/test_chat_qwen3.py::test_parse_tool_calls_extracts_tagged_call PASSED [  9%]
+tests/unit/test_chat_qwen3.py::test_parse_tool_calls_no_calls_returns_full_text PASSED [ 11%]
+tests/unit/test_chat_qwen3.py::test_parse_tool_calls_malformed_json_is_skipped PASSED [ 13%]
+tests/unit/test_chat_qwen3.py::test_parse_tool_calls_untagged_bare_json_fallback PASSED [ 15%]
+tests/unit/test_chat_qwen3.py::test_parse_tool_calls_bare_json_without_required_keys_not_treated_as_call PASSED [ 17%]
+tests/unit/test_chunking.py::test_empty_text_produces_no_chunks PASSED   [ 19%]
+tests/unit/test_chunking.py::test_short_text_produces_single_chunk PASSED [ 21%]
+tests/unit/test_chunking.py::test_long_text_produces_overlapping_chunks PASSED [ 23%]
+tests/unit/test_chunking.py::test_consecutive_chunks_overlap PASSED      [ 25%]
+tests/unit/test_chunking.py::test_no_chunk_exceeds_chunk_size_words PASSED [ 26%]
+tests/unit/test_fetch_news_filters.py::test_trusted_sources_pass PASSED  [ 28%]
+tests/unit/test_fetch_news_filters.py::test_untrusted_sources_rejected PASSED [ 30%]
+tests/unit/test_fetch_news_filters.py::test_empty_source_rejected PASSED [ 32%]
+tests/unit/test_fetch_news_filters.py::test_relevance_tokens_include_ticker_and_company_name PASSED [ 34%]
+tests/unit/test_fetch_news_filters.py::test_relevance_matches_ticker_symbol PASSED [ 36%]
+tests/unit/test_fetch_news_filters.py::test_relevance_matches_company_name_even_without_ticker PASSED [ 38%]
+tests/unit/test_fetch_news_filters.py::test_irrelevant_article_rejected PASSED [ 40%]
+tests/unit/test_grounding.py::test_catches_fabricated_company_product_meta_cloud PASSED [ 42%]
+tests/unit/test_grounding.py::test_catches_fabricated_company_product_facebook_cloud PASSED [ 44%]
+tests/unit/test_grounding.py::test_known_real_products_not_flagged PASSED [ 46%]
+tests/unit/test_grounding.py::test_azure_ai_not_flagged_as_fabricated PASSED [ 48%]
+tests/unit/test_grounding.py::test_sentence_starter_not_flagged_as_company_name PASSED [ 50%]
+tests/unit/test_grounding.py::test_heading_gerund_not_flagged_as_company_name PASSED [ 51%]
+tests/unit/test_grounding.py::test_clean_analysis_has_no_flags PASSED    [ 53%]
+tests/unit/test_grounding.py::test_fabricated_number_is_flagged PASSED   [ 55%]
+tests/unit/test_grounding.py::test_real_number_from_source_not_flagged PASSED [ 57%]
+tests/unit/test_grounding.py::test_percent_claim_matches_raw_decimal_fraction PASSED [ 59%]
+tests/unit/test_grounding.py::test_sp500_index_reference_not_flagged PASSED [ 61%]
+tests/unit/test_grounding.py::test_52_week_phrase_not_flagged PASSED     [ 63%]
+tests/unit/test_grounding.py::test_calendar_year_not_flagged PASSED      [ 65%]
+tests/unit/test_grounding.py::test_list_numbering_not_flagged PASSED     [ 67%]
+tests/unit/test_grounding.py::test_units_magnitude_error_is_caught PASSED [ 69%]
+tests/unit/test_metric_labels.py::test_aapl_real_values_labeled_correctly PASSED [ 71%]
+tests/unit/test_metric_labels.py::test_debt_to_equity_moderate_not_high PASSED [ 73%]
+tests/unit/test_metric_labels.py::test_debt_to_equity_buckets PASSED     [ 75%]
+tests/unit/test_metric_labels.py::test_analyst_rating_scale_buckets PASSED [ 76%]
+tests/unit/test_metric_labels.py::test_missing_metrics_produce_no_label PASSED [ 78%]
+tests/unit/test_metric_labels.py::test_empty_fundamentals_produces_empty_labels PASSED [ 80%]
+tests/unit/test_metric_labels.py::test_roe_and_pm_use_percent_scale_not_raw_fraction PASSED [ 82%]
+tests/unit/test_watchlist.py::test_load_watchlist_missing_file_returns_empty PASSED [ 84%]
+tests/unit/test_watchlist.py::test_add_ticker_persists PASSED            [ 86%]
+tests/unit/test_watchlist.py::test_add_ticker_is_case_insensitive_and_deduped PASSED [ 88%]
+tests/unit/test_watchlist.py::test_add_multiple_tickers_preserves_order PASSED [ 90%]
+tests/unit/test_watchlist.py::test_remove_ticker PASSED                  [ 92%]
+tests/unit/test_watchlist.py::test_remove_nonexistent_ticker_is_a_no_op PASSED [ 94%]
+tests/unit/test_watchlist.py::test_is_watched PASSED                     [ 96%]
+tests/unit/test_watchlist.py::test_comment_lines_are_ignored PASSED      [ 98%]
+tests/unit/test_watchlist.py::test_blank_lines_are_ignored PASSED        [100%]
+
+============================== warnings summary ===============================
+.venv\Lib\site-packages\fastapi\testclient.py:1
+  C:\Users\tepui_66mr92q\trading_ai\.venv\Lib\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+.venv\Lib\site-packages\chromadb\telemetry\opentelemetry\__init__.py:128
+  C:\Users\tepui_66mr92q\trading_ai\.venv\Lib\site-packages\chromadb\telemetry\opentelemetry\__init__.py:128: DeprecationWarning: 'asyncio.iscoroutinefunction' is deprecated and slated for removal in Python 3.16; use inspect.iscoroutinefunction() instead
+    if asyncio.iscoroutinefunction(f):
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=============== 52 passed, 18 deselected, 2 warnings in 11.58s ================
+=== unit tests done ===
+============================= test session starts =============================
+platform win32 -- Python 3.14.6, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\tepui_66mr92q\trading_ai\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\tepui_66mr92q\trading_ai
+configfile: pytest.ini
+plugins: anyio-4.14.0
+collecting ... collected 70 items / 52 deselected / 18 selected
+
+tests/integration/test_api.py::test_health PASSED                        [  5%]
+tests/integration/test_api.py::test_watchlist_get PASSED                 [ 11%]
+tests/integration/test_api.py::test_watchlist_add_and_remove_round_trip PASSED [ 16%]
+tests/integration/test_api.py::test_market_endpoint PASSED               [ 22%]
+tests/integration/test_api.py::test_fundamentals_endpoint PASSED         [ 27%]
+tests/integration/test_api.py::test_news_endpoint PASSED                 [ 33%]
+tests/integration/test_api.py::test_sector_endpoint PASSED               [ 38%]
+tests/integration/test_api.py::test_analyze_endpoint_full_pipeline PASSED [ 44%]
+tests/integration/test_api.py::test_analyze_endpoint_rejects_non_watchlist_ticker PASSED [ 50%]
+tests/integration/test_data_fetchers.py::test_fetch_market_price_real_ticker PASSED [ 55%]
+tests/integration/test_data_fetchers.py::test_fetch_fundamentals_includes_expanded_fields PASSED [ 61%]
+tests/integration/test_data_fetchers.py::test_fetch_sector_real_stock PASSED [ 66%]
+tests/integration/test_data_fetchers.py::test_fetch_sector_etf_returns_error_not_garbage PASSED [ 72%]
+tests/integration/test_data_fetchers.py::test_fetch_news_excludes_video_content PASSED [ 77%]
+tests/integration/test_data_fetchers.py::test_fetch_news_only_trusted_sources PASSED [ 83%]
+tests/integration/test_data_fetchers.py::test_fetch_performance_established_ticker_has_full_history PASSED [ 88%]
+tests/integration/test_data_fetchers.py::test_fetch_performance_recent_ipo_has_partial_history PASSED [ 94%]
+tests/integration/test_data_fetchers.py::test_fetch_filing_extracts_clean_prose_not_xbrl_metadata PASSED [100%]
+
+============================== warnings summary ===============================
+.venv\Lib\site-packages\fastapi\testclient.py:1
+  C:\Users\tepui_66mr92q\trading_ai\.venv\Lib\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+.venv\Lib\site-packages\chromadb\telemetry\opentelemetry\__init__.py:128
+  C:\Users\tepui_66mr92q\trading_ai\.venv\Lib\site-packages\chromadb\telemetry\opentelemetry\__init__.py:128: DeprecationWarning: 'asyncio.iscoroutinefunction' is deprecated and slated for removal in Python 3.16; use inspect.iscoroutinefunction() instead
+    if asyncio.iscoroutinefunction(f):
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========== 18 passed, 52 deselected, 2 warnings in 259.21s (0:04:19) ==========
+=== integration tests done ===

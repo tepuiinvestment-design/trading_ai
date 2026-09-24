@@ -1,0 +1,245 @@
+Lucy CPU Baseline Report — 2026-07-18
+Tickers: CI, ANET, CRUS, LRCX, MU, NVDA, TSM, VLO, EOG, NRG
+Execution provider: CPU (pre-RTX 4000) — kept for before/after GPU comparison.
+============================================================
+
+### CI
+  Price: 281.45
+
+  Analysis:
+  - **Key risks**: High debt-to-equity ratio (moderate) could limit financial flexibility. Recent news about FTC settlements may impact market sentiment.
+
+- **Key opportunities**: Strong analyst ratings with a 'Buy' consensus suggest potential for growth. Low price-to-earnings ratios indicate possible undervaluation.
+
+- **Historical performance**:
+  - 1-month return: -1.28%
+  - YTD return: +3.42%
+  - 1-year return: -3.55%
+  - 3-year return: +4.62%
+  - 5-year return: +31.97%
+
+- **Sector context**: CI operates in the Healthcare sector, specifically within the Healthcare Plans industry. It is part of the XLV ETF, which tracks the healthcare sector.
+
+- **Fundamental strengths/weaknesses**:
+  - Strengths: Very low forward P/E and trailing P/E; strong analyst rating mean ('Buy'); moderate dividend yield.
+  - Weaknesses: Moderate debt-to-equity ratio; relatively low profit margin.
+
+- **Final verdict**: CI presents a compelling investment opportunity due to its attractive valuation metrics and positive analyst sentiment. However, investors should remain cautious given the company's moderate leverage position.
+
+  grounding_review: {'clean': True, 'unverified_numbers': [], 'unverified_products': []}
+
+### ANET
+  Price: 168.61
+
+  Analysis:
+  - **Key risks**: High price-to-earnings (PE) ratio indicates potential overvaluation. Also, the stock has not been covered by recent news.
+
+- **Key opportunities**: Strong analyst ratings and high target prices suggest strong institutional confidence in future growth. The company is positioned within a growing sector.
+
+- **Historical performance**:
+  - 1-month return: +2.23%
+  - YTD return: +28.68%
+  - 1-year return: +50.57%
+  - 3-year return: +288.7%
+  - 5-year return: +642.26%
+
+- **Sector context**: ANET operates in the Technology sector, specifically within the Computer Hardware industry. It is part of the XLK ETF, which tracks the broader technology market.
+
+- **Fundamental strengths/weaknesses**:
+  - Strengths: Strong analyst rating ("Strong Buy") with an average rating of "Strong Buy". High forward PE ratio suggests optimism about future earnings.
+  - Weaknesses: Very high current PE ratio may indicate overvaluation relative to historical levels or compared to peers. This could pose risk if earnings do not meet expectations.
+
+- **Final verdict**: ANET presents a compelling investment opportunity due to its strong analyst consensus and optimistic future earnings projections. However, investors should remain cautious given the stock's elevated valuation metrics.
+
+  grounding_review: {'clean': True, 'unverified_numbers': [], 'unverified_products': []}
+
+### CRUS
+  Price: 137.98
+
+  Analysis:
+  - **Key risks**: High PEG label indicates potential overvaluation; recent 1-month return of -13.91% shows volatility.
+  
+- **Key opportunities**: Strong ROE and PM labels indicate efficient capital use; analysts rate the stock as "Buy" with a target price mean of $181.75.
+
+- **Historical performance**:
+  - 1-month: -13.91%
+  - YTD: +16.44%
+  - 1-year: +33.47%
+  - 3-years: +73.54%
+  - 5-years: +65.05%
+
+- **Sector context**: CRUS operates in the Technology sector, specifically within the Semiconductors industry. It is part of the XLK ETF (Technology Select Sector SPDR Fund).
+
+- **Fundamental strengths/weaknesses**:
+  - Strengths: Strong ROE and PM labels; moderate PE ratio; strong analyst rating ("Buy") with high target prices.
+  - Weaknesses: High PEG label suggests possible overvaluation relative to growth expectations; forward PE is low but this may not be sustainable if earnings do not grow at expected rates.
+
+- **Final verdict**: CRUS presents a compelling investment opportunity due to its strong fundamentals, robust analyst ratings, and positive historical returns. However, investors should remain cautious given the stock's relatively high valuation metrics compared to peers.
+
+  grounding_review: {'clean': True, 'unverified_numbers': [], 'unverified_products': []}
+
+### LRCX
+  Price: 313.3
+
+  Analysis:
+  - **Key risks**: High price-to-earnings (P/E) ratio indicates potential overvaluation. Low dividend yield may not appeal to income-focused investors.
+
+- **Key opportunities**: Strong analyst ratings and high forward P/E suggest strong growth expectations. The company operates in a growing semiconductor equipment & materials sector, offering long-term industry tailwinds.
+
+- **Historical performance**:
+  - 1-month return: -16.27%
+  - YTD return: +83.37%
+  - 1-year return: +212.56%
+  - 3-year return: +390.65%
+  - 5-year return: +460.83%
+
+- **Sector context**: LRCX is part of the Technology sector, specifically within the Semiconductor Equipment & Materials sub-sector. This sector has shown consistent growth due to increasing demand for semiconductors across various industries.
+
+- **Fundamental strengths/weaknesses**:
+  - **Strengths**: Strong earnings growth with trailing EPS at $5.29 and forward EPS at $8.08. High revenue growth rate of 23.8%. Strong operating margins.
+  - **Weaknesses**: Very high P/E ratio suggests possible overvaluation relative to earnings. Forward P/E ratio remains relatively high compared to historical averages, indicating continued investor optimism that might be unsustainable if earnings do not meet expectations.
+
+- **Final verdict**: LRCX presents a compelling investment opportunity given its strong fundamentals, robust earnings growth, and favorable analyst sentiment. However, investors should remain cautious due to the stock's elevated valuation metrics.
+
+  grounding_review: {'clean': True, 'unverified_numbers': [], 'unverified_products': []}
+
+### MU
+  Price: 848.95
+
+  Analysis:
+  - **Key risks**: High debt-to-equity ratio (6.33) indicates potential financial stress; also, the stock has experienced a significant 1-month decline of -18.61%.
+
+- **Key opportunities**: Strong analyst rating ("Strong Buy") and high target price mean (1491.9524) suggest strong growth expectations; also, the company is in the fast-growing semiconductor industry.
+
+- **Historical performance**:
+  - 1-month return: -18.61%
+  - YTD return: +197.62%
+  - 1-year return: +650.76%
+  - 3-year return: +1221.89%
+  - 5-year return: +1060.64%
+
+- **Sector context**: Micron Technology operates within the Technology sector, specifically in the Semiconductors industry — one of the fastest growing sectors globally due to increasing demand for electronic devices across all industries.
+
+- **Fundamental strengths/weaknesses**:
+  - Strengths: Strong forward PE label ('low') suggests undervaluation relative to future earnings; strong ROE label ('strong') shows efficient use of equity capital.
+  - Weaknesses: Moderate P/E label ('moderate') implies that the current valuation may not be significantly higher than historical averages; low dividend yield label ('low') suggests limited income generation from dividends alone.
+
+- **Final verdict**: Micron Technology presents a compelling investment opportunity with strong fundamentals, robust historical returns, and favorable analyst sentiment.
+
+  grounding_review: {'clean': True, 'unverified_numbers': [], 'unverified_products': []}
+
+### NVDA
+  Price: 202.81
+
+  Analysis:
+  - **Key risks**: High forward PE suggests potential overvaluation; high debt-to-equity ratio (6.55) indicates significant leverage risk.
+
+- **Key opportunities**: Strong analyst rating ("Strong Buy") and positive long-term growth, with 3-year return of 327.85% and a 5-year return of 1020.6%.
+
+- **Historical performance**:
+  - Return_1mo_pct: -0.9
+  - Return_ytd_pct: 8.88
+  - Return_1yr_pct: 17.39
+  - Return_3yr_pct: 327.85
+  - Return_5yr_pct: 1020.6
+
+- **Sector context**: NVIDIA operates in the Technology sector, specifically within the Semiconductors industry. It is part of the XLK ETF, which tracks the broader technology market.
+
+- **Fundamental strengths/weaknesses**:
+  - Strengths: Strong analyst ratings ("Strong Buy"), strong price momentum reflected in historical returns, and robust revenue growth.
+  - Weaknesses: High forward PE relative to earnings expectations may indicate overvaluation or higher volatility ahead.
+
+- **Final verdict**: NVIDIA presents a compelling investment opportunity due to its strong fundamentals, robust historical returns, and favorable analyst sentiment.
+
+  grounding_review: {'clean': True, 'unverified_numbers': [], 'unverified_products': []}
+
+### TSM
+  Price: 398.37
+
+  Analysis:
+  - **Key risks**: High price-to-earnings (PE) ratio indicates potential overvaluation. The semiconductor industry is highly cyclical and sensitive to global economic conditions.
+
+- **Key opportunities**: Strong earnings growth, with forward PE at a moderate level, suggests strong fundamentals and future upside potential.
+
+- **Historical performance**:
+  - 1-month return: -7.82%
+  - YTD return: +31.77%
+  - 1-year return: +64.0%
+  - 3-year return: +302.96%
+  - 5-year return: +273.39%
+
+- **Sector context**: TSMC operates in the Technology sector, specifically within the Semiconductors industry. It's part of the XLK ETF which tracks the broader technology market.
+
+- **Fundamental strengths/weaknesses**:
+  - **Strengths**: Strong revenue growth across all time frames; high returns on equity (ROE); strong profit margins.
+  - **Weaknesses**: High current PE ratio compared to historical averages may indicate some overvaluation or increased volatility expectations.
+
+- **Final verdict**: TSMC presents a compelling investment opportunity due to its robust financial performance, strong fundamental metrics, and leadership position in the semiconductors industry.
+
+  grounding_review: {'clean': True, 'unverified_numbers': [], 'unverified_products': []}
+
+### VLO
+  Price: 309.65
+
+  Analysis:
+  - **Key risks**: High forward PE suggests overvaluation; volatile oil prices could impact refining margins and profitability.
+
+- **Key opportunities**: Strong refining margins are driving profits; positive long-term returns (5-year return of 463.0%) indicate strong growth potential.
+
+- **Historical performance**:
+  - 1-month: +29.14%
+  - YTD: +92.29%
+  - 1-year: +119.52%
+  - 3-years: +192.54%
+  - 5-years: +463.0%
+
+- **Sector context**: VLO operates in the Energy sector, specifically within the Oil & Gas Refining & Marketing industry. It is part of the XLE ETF which tracks the S&P Global Clean Energy Index.
+
+- **Fundamental strengths/weaknesses**:
+  - Strengths: Moderate trailing P/E ratio indicates reasonable valuation; high free cash flow supports financial strength.
+  - Weaknesses: High forward P/E ratio may suggest overvaluation relative to future earnings expectations; moderate dividend yield compared to other energy stocks might be seen as a weakness for income-focused investors.
+
+- **Final verdict**: Valero's stock has delivered impressive long-term gains with strong recent performance driven by record refining margins.
+
+  grounding_review: {'clean': True, 'unverified_numbers': [], 'unverified_products': []}
+
+### EOG
+  Price: 139.89
+
+  Analysis:
+  - **Key risks**: High leverage could amplify losses; volatile energy sector subject to price swings and geopolitical events.
+
+- **Key opportunities**: Strong fundamentals with low P/E ratios suggest undervaluation; potential for growth in oil & gas E&P industry.
+
+- **Historical performance**:
+  - 1-month return: +5.76%
+  - YTD return: +36.54%
+  - 1-year return: +22.23%
+  - 3-year return: +26.72%
+  - 5-year return: +139.68%
+
+- **Sector context**: Energy sector, specifically the Oil & Gas Exploration and Production (E&P) subsector, which is highly sensitive to global crude prices and supply-demand dynamics.
+
+- **Fundamental strengths/weaknesses**:
+  - Strengths: Low forward P/E ratio suggests strong earnings power relative to stock price; high dividend yield indicates attractive income stream.
+  - Weaknesses: Moderate debt-to-equity ratio may indicate some financial risk if not managed properly.
+
+- **Final verdict**: EOG presents a compelling investment opportunity due to its strong fundamentals, favorable valuation metrics, and exposure to a resilient energy sector.
+
+  grounding_review: {'clean': True, 'unverified_numbers': [], 'unverified_products': []}
+
+### NRG
+  Price: 129.11
+
+  Analysis:
+  - **Key risks**: High leverage (de_label: 'high leverage') and low return on equity (roe_label: 'low').  
+- **Key opportunities**: Strong 3-year and 5-year returns, indicating potential for long-term growth.  
+- **Historical performance**: Return_1mo_pct: -2.29; return_ytd_pct: -18.42; return_1yr_pct: -11.39; return_3yr_pct: 271.61; return_5yr_pct: 264.74.  
+
+- **Sector context**: NRG operates in the Utilities sector, specifically within the Independent Power Producers industry. It is part of a broader ETF that tracks utility stocks.  
+
+- **Fundamental strengths/weaknesses**: Forward PE label: 'low' indicates undervaluation relative to future earnings. However, high debt-to-equity ratio (de_label: 'high leverage')) suggests significant financial risk.
+
+- **Final verdict**: NRG shows strong long-term growth with impressive 3-year and 5-year returns. However, its current valuation appears attractive given its forward PE, but it carries substantial financial risk due to its high leverage.
+
+  grounding_review: {'clean': True, 'unverified_numbers': [], 'unverified_products': []}

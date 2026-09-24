@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(.venv/Scripts/python.exe -m pip install chromadb)",
+      "Bash(cd \"c:/Users/tepui_66mr92q/trading_ai\" && mkdir -p lucy/rag data/vectorstore && echo done)",
+      "Bash(.venv/Scripts/python.exe -m py_compile lucy/rag/embedder.py lucy/rag/chunking.py lucy/rag/store.py lucy/rag/ingest.py lucy/rag/retrieve.py lucy/rag/__init__.py lucy/analyze.py src/main.py)",
+      "Bash(.venv/Scripts/python.exe -c ' *)",
+      "Bash(.venv/Scripts/python.exe -c \"import yfinance; print\\(yfinance.__version__\\)\")",
+      "Bash(.venv/Scripts/python.exe -m py_compile lucy/watchlist.py lucy/analyze.py api/router.py web/fetch_news.py src/main.py)",
+      "Bash(rm -f data/watchlist_test.csv)",
+      "Bash(LUCY_WATCHLIST_PATH=data/watchlist_test.csv .venv/Scripts/python.exe -c ' *)",
+      "Bash(rm -f data/watchlist.csv)",
+      "Bash(.venv/Scripts/python.exe -m py_compile web/fetch_sector.py)",
+      "Bash(.venv/Scripts/python.exe -m py_compile lucy/weekly_routine.py)",
+      "Bash(ps -o pid,etime,time,pcpu,pmem)",
+      "Bash(ps -o pid,etime,time,pcpu,pmem -p 771)",
+      "Bash(.venv/Scripts/python.exe -m py_compile lucy/rag/ingest.py lucy/analyze.py)",
+      "Bash(nvidia-smi)",
+      "Bash(nohup .venv/Scripts/python.exe -c ' *)",
+      "Bash(echo \"launched pid: $!\")",
+      "Bash(.venv/Scripts/python.exe -m py_compile lucy/grounding.py lucy/analyze.py)",
+      "Bash(.venv/Scripts/python.exe -m py_compile web/fetch_news.py)",
+      "Bash(.venv/Scripts/python.exe -m py_compile lucy/analyze.py)",
+      "Bash(.venv/Scripts/python.exe -m py_compile lucy/grounding.py)"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\tepui_66mr92q\\trading_ai\\lucy"
+    ]
+  }
+}
