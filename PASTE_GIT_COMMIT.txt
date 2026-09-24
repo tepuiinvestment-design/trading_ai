@@ -1,0 +1,1 @@
+git add -A; git commit -m "RAG: bge-small-en-v1.5 embedder via onnxruntime, per-embedder collections, migration + check scripts"; git push

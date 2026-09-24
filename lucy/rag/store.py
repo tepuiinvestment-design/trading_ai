@@ -3,28 +3,49 @@ from pathlib import Path
 
 import chromadb
 
-from lucy.rag.embedder import get_embedding_function
+from lucy.rag.embedder import (
+    EMBEDDER_BGE,
+    get_embedding_function,
+    get_embedding_function_kind,
+)
 
-COLLECTION_NAME = "lucy_documents"
+# The original MiniLM-embedded collection. Kept (not deleted) so the
+# migration script can copy its documents across and so LUCY_EMBEDDER=minilm
+# still works as a rollback.
+LEGACY_COLLECTION_NAME = "lucy_documents"
+BGE_COLLECTION_NAME = "lucy_documents_bge_small_en_v15"
 
 _client = None
 _collection = None
+
+
+def collection_name(embedder_kind: str) -> str:
+    """One collection per embedding model — vectors from different models
+    must never share a collection."""
+    return BGE_COLLECTION_NAME if embedder_kind == EMBEDDER_BGE else LEGACY_COLLECTION_NAME
 
 
 def _persist_dir() -> str:
     return os.environ.get("LUCY_RAG_PERSIST_DIR", "data/vectorstore")
 
 
-def get_collection():
-    """Module-level singleton — the Chroma client/collection is opened once
-    per process, using whatever LUCY_RAG_PERSIST_DIR is set to at first call."""
-    global _client, _collection
-    if _collection is None:
+def get_client():
+    global _client
+    if _client is None:
         persist_dir = _persist_dir()
         Path(persist_dir).mkdir(parents=True, exist_ok=True)
         _client = chromadb.PersistentClient(path=persist_dir)
-        _collection = _client.get_or_create_collection(
-            name=COLLECTION_NAME,
+    return _client
+
+
+def get_collection():
+    """Module-level singleton — the Chroma client/collection is opened once
+    per process, using whatever LUCY_RAG_PERSIST_DIR / LUCY_EMBEDDER are set
+    to at first call."""
+    global _collection
+    if _collection is None:
+        _collection = get_client().get_or_create_collection(
+            name=collection_name(get_embedding_function_kind()),
             embedding_function=get_embedding_function(),
         )
     return _collection
